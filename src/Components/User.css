@@ -1,0 +1,68 @@
+.user {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+  color: #fff;
+  background-image: linear-gradient(259deg, var(--dusk), var(--dark));
+  box-shadow: 0 1px 0 0 var(--white), 0 -1px 0 0 var(--white);
+}
+  .user:hover {
+    background-image: linear-gradient(259deg, var(--dark), var(--dusk));
+  }
+    .user:hover .icon-go {
+      animation: bounce 600ms both infinite;
+    }
+
+.user-image-container {
+  width: 52px;
+}
+
+.user-image {
+  border-radius: 50%;
+  border: solid 1px var(--white);
+}
+
+.user-info {
+  padding: 0.625rem;
+  overflow: hidden;
+}
+  .user-info > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.user-name {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.user-account {
+  margin-top: 0.3125rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+  .user-account span + span {
+    margin-left: 20px;
+  }
+
+.user-add {
+  flex: 1;
+  min-width: 70px;
+  text-align: right;
+}
+  .user-add img + img {
+    margin-left: 5px;
+  }
+
+@keyframes bounce {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-2px, 0, 0);
+  }
+}
