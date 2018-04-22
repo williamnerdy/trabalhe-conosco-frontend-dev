@@ -1,7 +1,9 @@
 {
-  "name": "picpay-frontend-test",
+  "name": "trabalhe-conosco-frontend-dev",
   "version": "1.0.0",
   "private": true,
+  "author": "William Cunha",
+  "homepage": "https://williamnerdy.github.io/trabalhe-conosco-frontend-dev",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
